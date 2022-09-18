@@ -1,10 +1,11 @@
 import handleClick from "./HandleClick"
 import "./assets/Form.css"
 export default function Form() {
-    return(
+    return (
         <div className="form">
-            <form action="/" onSubmit={handleClick}>
-                <table>
+            <form action="/"
+                onSubmit={handleClick}>
+                {/* <table>
                     <tr>
                         <td>
                             Event Name :
@@ -51,7 +52,37 @@ export default function Form() {
                             <input type="submit" value="Submit" />
                         </td>
                     </tr>
-                </table>
+                </table> */}
+                <div className="formGroup">
+                    <div className="inputSet">
+                        <label htmlFor="eventName">Event Name</label>
+                        <input type="text" name="eventName" required/>
+                    </div>
+                    <div className="inputSet">
+                        <label htmlFor="eventAbstract">Abstract</label>
+                        <input type="text" name="eventAbstract" required/>
+                    </div>
+                    <div className="inputSet">
+                        <label htmlFor="eventDetail">Detail</label>
+                        <textarea name="eventDetail" id="detailInput"required/>
+                    </div>
+                    <div className="inputSet" id="radioInput">
+                        <label htmlFor="radioSet">Mode</label>
+                        <span className="radioSet" id="radioSet">
+                            <label htmlFor="r1">Online</label>
+                            <input type="radio" name="eventMode" value="Online" id='r1' required/>
+                            <label htmlFor="r2">Offline</label>
+                            <input type="radio" name="eventMode" value="Offline" id='r2' required/>
+                        </span>
+                    </div>
+                    <div className="inputSet">
+                        <label htmlFor="eventAuthor">Your Name</label>
+                        <input type="text" name="eventAuthor" required/>
+                    </div>
+                    <div className="inputSet">
+                        <input type="submit" name="eventAuthor" required/>
+                    </div>
+                </div>
             </form>
         </div>
     )
