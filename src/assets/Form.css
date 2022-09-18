@@ -1,0 +1,18 @@
+.form{
+    margin-top: 4rem;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.form table{
+    width: 90vw;
+}
+td:nth-child(odd){
+    width: fit-content;
+}
+td:nth-child(even){
+}
+td>input,td>textarea{
+    width: 100%;
+}

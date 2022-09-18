@@ -1,0 +1,16 @@
+.navbar{
+    display: flex;
+    background-color: #f7f7f7;
+    justify-content: center;
+    -webkit-box-shadow: 0px 8px 13px 0px rgba(0,0,0,0.33);
+-moz-box-shadow: 0px 8px 13px 0px rgba(0,0,0,0.33);
+box-shadow: 0px 8px 13px 0px rgba(0,0,0,0.33);
+}
+.navbar>img{
+    height: inherit;
+    object-fit: contain;
+    height: inherit;
+}
+.navbar>h1{
+    font-weight:600;
+}
